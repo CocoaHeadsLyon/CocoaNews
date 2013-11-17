@@ -94,4 +94,13 @@ NSString * const kCCNTableViewControllerHeaderID = @"kCCNTableViewControllerHead
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+
+#pragma mark - NSFetchedResultsControllerDelegate
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
+    // Called each time the fetchedResultsController content changes
+    [self.tableView reloadData];
+}
+
 @end
