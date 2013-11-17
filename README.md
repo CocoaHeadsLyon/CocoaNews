@@ -1,0 +1,4 @@
+CocoaNews
+=========
+
+Core Data example
